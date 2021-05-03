@@ -17,23 +17,32 @@ ubar = 0.2; vbar = 0.1;
 
 
 % time discretization
-dt = 0.1*h^2;
+dt = 5*10^(-3);
 maxit = 10000;
 nn = maxit;
 
 for pit = 1:1
     rng(pit);
-    u = ubar + 0.1*(2*rand(nx+2, ny+2)-1);
-    v = vbar + 0.1*(2*rand(nx+2, ny+2)-1);
+    u = ubar + sigma*(2*rand(nx+2, ny+2)-1);  
+    v = vbar + sigma*(2*rand(nx+2, ny+2)-1);
     nu = u; nv = v;
     
     % numerical scheme
     for it = 1:maxit
-        % no-flux boundary condition (in progress)
+        % no-flux boundary condition (in progress -> add y-direction )
         u(1, :) = u(2, :);
         u(end, :) = u(end-1, :);
+        u(:, 1) = u(:, 2);
+        u(:, end) = u(:, end-1);
         v(1, :) = v(2, :);
-        v(end, :) = v(end-1, :);        
+        v(end, :) = v(end-1, :);     
+        v(:, 1) = v(:, 2);
+        v(:, end) = v(:, end-1);
+        
+        
+        
+        
+        
         
         % set the source terms
         F = u(2:end-1, 2:end-1).*v(2:end-1, 2:end-1)./(u(2:end-1, 2:end-1) + alpha);
@@ -56,6 +65,7 @@ for pit = 1:1
             set(gca, 'xtick', [], 'ytick', []);
             title([num2str(it)])
             box on;
+            colorbar;
             shading interp;
             hold on;
             drawnow;
