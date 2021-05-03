@@ -2,7 +2,9 @@
 
 
 ### Diffusive prey-predator systems 
-#### Holling II functional response (in progress)
+#### 1. Classical prey-predator equations
+
+#### 2. Holling II functional response (in progress)
 - Central differences in space
 - Caputo's derivative by Grunwald - Letnikov method in time
 - Zero-flux boundary condition
