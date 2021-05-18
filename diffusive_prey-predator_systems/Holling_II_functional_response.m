@@ -2,11 +2,11 @@ clear; clc; close all;
 
 % spatial and time discretization
 nx = 50; 
-x = linspace(0,nx-1,nx)'; 
-h = x(2) - x(1);  % space step
-dt = 5*10^(-3);  % time step
+h = 1;  % space step
+x = linspace(-0.5*h,50+0.5*h,nx+2);
+dt = 10^(-10);  % time step
 r = dt/h^2;
-maxit = 2000;
+maxit = 100000;
 
 % parameters which govern equation
 alpha = 0.5;   % prey's density at which the predator has the maximum kill rate (0.175)
@@ -20,8 +20,8 @@ for pit = 1:1
     rng(pit);
     
     % initial condition
-    u = sigma*(2*rand(nx, maxit)-1);  
-    v = sigma*(2*rand(nx, maxit)-1);  
+    u = ubar + sigma*(2*rand(nx, maxit)-1);  
+    v = vbar + sigma*(2*rand(nx, maxit)-1);  
     
    % no-flux boundary condition 
     u(1, :) = u(2, :);
@@ -36,8 +36,8 @@ for pit = 1:1
         for ix = 2:nx-1   % space loop
             
             % set the source terms
-            F = (u(ix, it).*v(ix, it))./(u(ix, it) + alpha);
-            f = u(ix, it).*(1-u(ix, it)) - F ;
+            F = (u(ix, it)*v(ix, it))/(u(ix, it) + alpha);
+            f = u(ix, it)*(1-u(ix, it)) - F ;
             g = -gamma*v(ix, it) + beta*F ;
             
             nu(ix, it) = u(ix, it) + r*(u(ix-1, it) + u(ix+1, it) - 2*u(ix, it)) + dt*f;
@@ -49,7 +49,7 @@ for pit = 1:1
         v = nv;
        
         % visualization
-        if mod(it, 100) == 0
+        if mod(it, 1000) == 0
             imagesc(nu(:, it));
 %             set(gca, 'xtick', [], 'ytick', []);
             title([num2str(it)])
