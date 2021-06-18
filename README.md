@@ -5,7 +5,7 @@
 #### 1. Classical prey-predator equations
 
 #### 2. Holling II functional response (in progress)
-- Temporal **first**-derivative system with Forward Euler method in time and Central differences in space (FTCS methods)
+- Temporal **first**-derivative system with Forward Euler method in time and Central differences in space (FTCS)
 - Temporal **fractional**-derivative system with Letnikov method in time (Caputo's derivative by Grunwald) and Central differences in space
 - Zero-flux boundary condition
 ```
