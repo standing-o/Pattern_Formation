@@ -1,5 +1,5 @@
-# Pattern_Formation (20210302 ~ )
-
+# Pattern Formation
+- Mar. 2, 2021
 
 ### Diffusive prey-predator systems 
 #### 1. Classical prey-predator equations
