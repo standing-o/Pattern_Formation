@@ -1,3 +1,7 @@
+% first-derivative Hollign ll functional response
+% FTCS methods
+
+
 clear; clc; close all;
 
 % spatial and time discretization
