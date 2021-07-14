@@ -3,7 +3,7 @@
 
 ## Diffusive prey-predator systems 
 ### 1. Holling II functional response
-- Temporal **first**-derivative system with Forward Euler method in time and Central differences in space (FTCS) | [Code](https://github.com/OH-Seoyoung/Pattern_Formation/blob/master/diffusive_prey-predator_systems/FTCS_first-derivative_Holling_II_functional_response.m)  
+- Temporal **first**-derivative system with Forward Euler method in time and Central differences in space (FTCS) | [Code](https://github.com/OH-Seoyoung/Pattern_Formation/blob/master/Diffusive_prey-predator_systems/FTCS_first-derivative_Holling_II_functional_response.m)  
 - Temporal **fractional**-derivative system with Letnikov method in time (Caputo's derivative by Grunwald) and Central differences in space
 - Zero-flux boundary condition
   
