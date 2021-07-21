@@ -1,6 +1,5 @@
-% first-derivative Hollign ll functional response
+% first-derivative Holling ll functional response
 % FTCS methods
-
 
 clear; clc; close all;
 
