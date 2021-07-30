@@ -29,20 +29,20 @@ uu = zeros(50,maxit/100);
 for pit = 1:1
     rng(pit);
     
+    u = zeros(nx,maxit+1); v = zeros(nx,maxit+1);
+    
     % initial condition
-    u = ubar + sigma*(2*rand(nx, maxit)-1);  
-    v = vbar + sigma*(2*rand(nx, maxit)-1);  
-    
-   % no-flux boundary condition 
-    u(1, :) = u(2, :);
-    u(end, :) = u(end-1, :);
-    v(1, :) = v(2, :);
-    v(end, :) = v(end-1, :); 
-        
-    nu = u; nv = v;
-    
+    u(:,1) = ubar + sigma*(2*rand(nx, 1)-1);  
+    v(:,1) = vbar + sigma*(2*rand(nx, 1)-1);  
+   
     % numerical scheme
     for it = 1:maxit   % time loop
+        % no-flux boundary condition
+        u(1, it) = u(2, it);
+        u(end, it) = u(end-1, it);
+        v(1, it) = v(2, it);
+        v(end, it) = v(end-1, it);
+        
         for ix = 2:nx-1   % space loop
             
             % set the source terms
@@ -60,24 +60,14 @@ for pit = 1:1
                 end
             end
 
-            nu(ix, it) = ddt*(r*u(ix, it) + (1/h^2)*(u(ix-1, it) + u(ix+1, it)) - cu + f);
-            nv(ix, it) = ddt*(r*v(ix, it) + (d/h^2)*(v(ix-1, it) + v(ix+1, it)) - cv + g);
+            u(ix, it+1) = ddt*(r*u(ix, it) + (1/h^2)*(u(ix-1, it) + u(ix+1, it)) - cu + f);
+            v(ix, it+1) = ddt*(r*v(ix, it) + (d/h^2)*(v(ix-1, it) + v(ix+1, it)) - cv + g);
             
         end
-        
-        % reset the variables for next step
-        u = nu;
-        v = nv;
-        
-      
-%         if mod(it, 100)==0
-%             uu(:,it/100)=nu(:,it);
-%         end
-        
-        
+
         % visualization
         if mod(it, 100) == 0
-            surf(t(2:end)', x(2:end-1), u,'linestyle','none');
+            surf(t(2:it), x(2:end-1), u(:,2:it), 'linestyle','none');
             xlabel('iterations'), ylabel('X')
             view(2);
             title([num2str(it)]);

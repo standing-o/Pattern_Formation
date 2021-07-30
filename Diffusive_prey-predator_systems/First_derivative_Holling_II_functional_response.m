@@ -30,9 +30,7 @@ for pit = 1:1
     % initial condition
     u(:,1) = ubar + sigma*(2*rand(nx, 1)-1);  
     v(:,1) = vbar + sigma*(2*rand(nx, 1)-1);  
-    
-    nu = zeros(nx,1); nv = zeros(nx,1);
-    
+
     % numerical scheme
     for it = 1:maxit  % time loop
         
@@ -43,7 +41,6 @@ for pit = 1:1
         v(end, it) = v(end-1, it);
         
         for ix = 2:nx-1   % space loop
-%             it
             % set the source terms
             F = (u(ix, it)*v(ix, it))/(u(ix, it) + alpha);
             f = u(ix, it)*(1-u(ix, it)) - F ;
