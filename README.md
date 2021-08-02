@@ -18,11 +18,11 @@ The parameters are taken as &alpha; = 0.175, &beta; = 0.95, &gamma; = 0.5, &eta;
 
 The parameters are taken as (a).
 
-#### 2) Change **diffusion coefficient (d) into 0.1**.
+#### 2) Change **diffusion coefficient "d" into 0.1**.
 
 We can observe the fluctuation in time and the small changes in space.
 
-#### 3) Change d = 0.1 and **length scale (h) into 10**.
+#### 3) Change d = 0.1 and **length scale "h" into 10**.
 
 If d and L are properly chosen, even first-order derivatives can form patterns.  
 
