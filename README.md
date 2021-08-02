@@ -1,6 +1,6 @@
 # Pattern Formation
 - Explorations of pattern formation in fractional partial differential equations
-- This is the MATLAB implemenation of paper by Yin et.al. "Pattern formation through temporal fractional derivatives"
+- This is the implemenation of paper by Yin et.al. "Pattern formation through temporal fractional derivatives"
 - May. 2, 2021 ~ Present
 
 ----------
