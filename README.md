@@ -15,7 +15,7 @@ The parameters are taken as &alpha; = 0.175, &beta; = 0.95, &gamma; = 0.5, &eta;
 - Zero-flux boundary condition, 1D
   
 #### 1) The spatial homogeneous periodic orbits of the prey and predator in 1D.
-<div align="center">
+<div align="">
 <img src="https://github.com/OH-Seoyoung/Pattern_Formation/blob/master/Diffusive_prey-predator_systems/figs/orig.jpg?raw=True" width="48%"> <br>
 </div>  
   
