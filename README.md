@@ -27,7 +27,7 @@ The parameters are taken as (a).
 <img src="https://github.com/OH-Seoyoung/Pattern_Formation/blob/master/Diffusive_prey-predator_systems/figs/change_d_L.jpg?raw=True" width="48%"> <br>
 </div>  
   
-If We change diffusion coefficient "d" into 0.1, we can observe the fluctuation in time and the small changes in space.  
+If we change diffusion coefficient "d" into 0.1, we can observe the fluctuation in time and the small changes in space.  
 If d and L are properly chosen, even first-order derivatives can form patterns.  
 
 -----------  
