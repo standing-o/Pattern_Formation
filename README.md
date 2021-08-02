@@ -1,5 +1,5 @@
 # Pattern Formation
-- Explorations of pattern formation in partial differential equations
+- Explorations of pattern formation in fractional partial differential equations
 - May. 2, 2021 ~ Present
 
 ----------
