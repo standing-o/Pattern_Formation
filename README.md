@@ -8,7 +8,7 @@
 <sup>∂<sup>&eta;</sup>v</sup>/<sub>∂t</sub> = d&Delta;v  - &gamma; v + <sup>&beta;uv</sup>/<sub>u+&alpha;</sub>
 
 If &eta; = 1, the system degenerates into the temporal first-derivative system, which represents the instantaneous behaviors of the prey and predator.   
-The parameters are taken as &alpha; = 0.175, &beta; = 0.95, &gamma; = 0.5, &eta; = 0.8, d = 20. ... (1)
+The parameters are taken as &alpha; = 0.175, &beta; = 0.95, &gamma; = 0.5, &eta; = 0.8, d = 20. ・・・ (1)
   
 ### 1. Temporal **first**-derivative system
 - Forward Euler method in time and Central differences in space (FTCS) | [Code](https://github.com/OH-Seoyoung/Pattern_Formation/blob/master/Diffusive_prey-predator_systems/FTCS_first-derivative_Holling_II_functional_response.m)  
