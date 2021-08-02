@@ -2,10 +2,16 @@
 - Explorations of pattern formation in partial differential equations
 - May. 2, 2021 ~ Present
 
-## Diffusive prey-predator systems 
-### 1. Holling II functional response
-- Temporal **first**-derivative system with Forward Euler method in time and Central differences in space (FTCS) | [Code](https://github.com/OH-Seoyoung/Pattern_Formation/blob/master/Diffusive_prey-predator_systems/FTCS_first-derivative_Holling_II_functional_response.m)  
-- Temporal **fractional**-derivative system with Letnikov method in time (Caputo's derivative by Grunwald) and Central differences in space
+----------
+## Diffusive prey-predator systems with Holling II functional response
+<sup>dx</sup>/<sub>dt</sub> = &Delta; u  + u(1-u) - <sup>uv</sup>/<sub>u+&alpha;</sub>
+
+### 1. Temporal **first**-derivative system
+Forward Euler method in time and Central differences in space (FTCS) | [Code](https://github.com/OH-Seoyoung/Pattern_Formation/blob/master/Diffusive_prey-predator_systems/FTCS_first-derivative_Holling_II_functional_response.m)  
+
+### 2. Temporal **fractional**-derivative system
+- It can form steadily spatial patterns even though its first-derivative counterpart can't exhibit any steady pattern.
+- Letnikov method in time (Caputo's derivative by Grunwald) and Central differences in space
 - Zero-flux boundary condition
   
 ## References
