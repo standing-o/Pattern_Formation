@@ -14,10 +14,10 @@ maxit = 10^(5);
 t = linspace(0, maxit*dt, maxit+1);
 
 % parameters which govern equation
-alpha = 0.5;   % prey's density at which the predator has the maximum kill rate (0.175)
-beta = 1;   % maximum birth (0.95)
+alpha = 0.175;   % prey's density at which the predator has the maximum kill rate (0.175)
+beta = 0.95;   % maximum birth (0.95)
 gamma = 0.5;   % dead rate of the predator
-d = 0.1;   % diffusion rate of the predator
+d = 20;   % diffusion rate of the predator
 sigma = 0.1;
 
 ubar = 0.2; vbar = 0.1;
@@ -33,6 +33,7 @@ for pit = 1:1
 
     % numerical scheme
     for it = 1:maxit  % time loop
+%         filename = 'orig.gif';
         
         % no-flux boundary condition
         u(1, it) = u(2, it);
@@ -50,16 +51,31 @@ for pit = 1:1
             v(ix, it+1) = v(ix, it) + r*d*(v(ix-1, it) + v(ix+1, it) - 2*v(ix, it)) + dt*g;
             
         end
-       
-        % visualization
-        if mod(it, 100) == 0
+
+%         if it == 1 
+%             hh = figure;
+%             frame = getframe(hh); 
+%             im = frame2im(frame); 
+%             [imind,cm] = rgb2ind(im,256); 
+%             imwrite(imind,cm,filename,'gif', 'Loopcount',inf); 
+%         end
+
+        if mod(it, 5000) == 0
             surf(t(2:it), x(2:end-1), u(:,2:it), 'linestyle','none');
             view(2);
             xlabel('time'), ylabel('X')
             title([num2str(it)])
             colorbar;
             drawnow;
+            print('-djpeg',sprintf('change_L',pit));
+            
+%             hh = figure;
+%             frame = getframe(hh); 
+%             im = frame2im(frame); 
+%             [imind,cm] = rgb2ind(im,256); 
+%             imwrite(imind,cm,filename,'gif','WriteMode','append'); 
         end
+
     end
  
 end

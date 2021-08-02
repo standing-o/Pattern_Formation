@@ -20,7 +20,7 @@ d = 20;   % diffusion rate of the predator (0.1)
 sigma = 0.1;
 ubar = 0.2; vbar = 0.1;
 
-eta = 0.8;  % fractional order
+eta = 1;  % fractional order
 ddt = dt^eta;
 r = eta/ddt - 2/h^2;
 
