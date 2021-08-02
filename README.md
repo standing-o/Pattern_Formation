@@ -11,7 +11,7 @@ If &eta; = 1, the system degenerates into the temporal first-derivative system, 
 The parameters are taken as &alpha; = 0.175, &beta; = 0.95, &gamma; = 0.5, &eta; = 0.8, d = 20. ・・・ (a)
   
 ### 1. Temporal **first**-derivative system
-- Forward Euler method in time and Central differences in space (FTCS) | [Code](https://github.com/OH-Seoyoung/Pattern_Formation/blob/master/Diffusive_prey-predator_systems/FTCS_first-derivative_Holling_II_functional_response.m)  
+- Forward Euler method in time and Central differences in space (FTCS) | [Code](https://github.com/OH-Seoyoung/Pattern_Formation/blob/master/Diffusive_prey-predator_systems/First_derivative.m)  
 - Zero-flux boundary condition, 1D
   
 #### 1) The spatial homogeneous periodic orbits of the prey and predator in 1D.
@@ -32,7 +32,7 @@ If d and L are properly chosen, even first-order derivatives can form patterns.
 -----------  
 ### 2. Temporal **fractional**-derivative system
 - It can form steadily spatial patterns even though its first-derivative counterpart can't exhibit any steady pattern.
-- Approximation of the Caputo's derivative by the Grunwald-Letnikov one in time and Central differences in space
+- Approximation of the Caputo's derivative by the Grunwald-Letnikov one in time and Central differences in space | [Code](https://github.com/OH-Seoyoung/Pattern_Formation/blob/master/Diffusive_prey-predator_systems/Fractional_derivative.m)  
 - Zero-flux boundary condition, 1D
 
 The differences between 1, 2 with the same parameters implies that the fractional derivative can product steady-state spatial patterns and induce the Turing instability.
