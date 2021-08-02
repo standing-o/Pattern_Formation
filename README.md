@@ -1,5 +1,6 @@
 # Pattern Formation
 - Explorations of pattern formation in fractional partial differential equations
+- This is a implementation of the Paper by Yin et.al. on Pattern formation through temporal fractional derivatives.
 - May. 2, 2021 ~ Present
 
 ----------
