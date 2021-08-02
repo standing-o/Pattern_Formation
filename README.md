@@ -4,7 +4,7 @@
 
 ----------
 ## Diffusive prey-predator systems with Holling II functional response
-<sup>∂<sup>&eta;</sup>u</sup>/<sub>∂t</sub> = &Delta; u  + u(1-u) - <sup>uv</sup>/<sub>u+&alpha;</sub>
+<sup>∂<sup>&eta;</sup>u</sup>/<sub>∂t</sub> = &Delta; u  + u(1-u) - <sup>uv</sup>/<sub>u+&alpha;</sub>  
 <sup>∂<sup>&eta;</sup>v</sup>/<sub>∂t</sub> = d&Delta; v  - &gamma; v + <sup>&beta; uv</sup>/<sub>u+&alpha;</sub>
 
 ### 1. Temporal **first**-derivative system
