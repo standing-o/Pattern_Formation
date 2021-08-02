@@ -4,7 +4,7 @@
 
 ----------
 ## Diffusive prey-predator systems with Holling II functional response
-<sup>dx</sup>/<sub>dt</sub> = &Delta; u  + u(1-u) - <sup>uv</sup>/<sub>u+&alpha;</sub>
+<sup>∂<sup>&eta;</sup>x</sup>/<sub>∂t</sub> = &Delta; u  + u(1-u) - <sup>uv</sup>/<sub>u+&alpha;</sub>
 
 ### 1. Temporal **first**-derivative system
 Forward Euler method in time and Central differences in space (FTCS) | [Code](https://github.com/OH-Seoyoung/Pattern_Formation/blob/master/Diffusive_prey-predator_systems/FTCS_first-derivative_Holling_II_functional_response.m)  
