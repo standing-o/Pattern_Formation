@@ -11,12 +11,15 @@ If &eta; = 1, the system degenerates into the temporal first-derivative system, 
 
   
 ### 1. Temporal **first**-derivative system
-Forward Euler method in time and Central differences in space (FTCS) | [Code](https://github.com/OH-Seoyoung/Pattern_Formation/blob/master/Diffusive_prey-predator_systems/FTCS_first-derivative_Holling_II_functional_response.m)  
+- Forward Euler method in time and Central differences in space (FTCS) | [Code](https://github.com/OH-Seoyoung/Pattern_Formation/blob/master/Diffusive_prey-predator_systems/FTCS_first-derivative_Holling_II_functional_response.m)  
+- Zero-flux boundary condition, 1D
 
 ### 2. Temporal **fractional**-derivative system
 - It can form steadily spatial patterns even though its first-derivative counterpart can't exhibit any steady pattern.
-- Letnikov method in time (Caputo's derivative by Grunwald) and Central differences in space
-- Zero-flux boundary condition
+- Approximation of the Caputo's derivative by the Grunwald-Letnikov one in time and Central differences in space
+- Zero-flux boundary condition, 1D
+
+The differences between 1, 2 with the same parameters implies that the fractional derivative can induce the Turing instability and product steady-state spatial patterns.
   
 ## References
 ```
