@@ -1,7 +1,7 @@
 # Pattern Formation
 - Explorations of pattern formation in fractional partial differential equations
 - This is the implemenation of paper by Yin et.al. "Pattern formation through temporal fractional derivatives"
-- May. 2, 2021 ~ <u>Present</u>
+- May. 2, 2021 ~ Aug. 1, 2021
 
 ----------
 ## Diffusive prey-predator systems with Holling II functional response
