@@ -43,7 +43,11 @@ If "d" and "h" are properly chosen, even first-order derivatives can form patter
 - Zero-flux boundary condition, 1D
 
 The differences between 1, 2 with the same parameters implies that the fractional derivative can product steady-state spatial patterns and induce the Turing instability.
-  
+
+&nbsp;
+&nbsp;
+&nbsp;
+
 ## References
 ```
 [1] Yin, Hongwei, and Xiaoqing Wen. "Pattern formation through temporal fractional derivatives." Scientific reports 8.1 (2018): 1-9.
