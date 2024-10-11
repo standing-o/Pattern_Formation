@@ -3,7 +3,10 @@
 - This is the implementation of paper by Yin et.al. "Pattern formation through temporal fractional derivatives"
 - May. 2, 2021 ~ Aug. 1, 2021
 
-----------
+&nbsp;
+&nbsp;
+&nbsp;
+
 ## Diffusive prey-predator systems with Holling II functional response
 <sup>∂<sup>&eta;</sup>u</sup>/<sub>∂t</sub> = &Delta;u  + u(1-u) - <sup>uv</sup>/<sub>u+&alpha;</sub>  
 <sup>∂<sup>&eta;</sup>v</sup>/<sub>∂t</sub> = d&Delta;v  - &gamma; v + <sup>&beta;uv</sup>/<sub>u+&alpha;</sub>
@@ -30,7 +33,10 @@ The parameters are taken as (a).
 If we change diffusion coefficient "d" into 0.1, we can observe the fluctuation in time and the small changes in space.  
 If "d" and "h" are properly chosen, even first-order derivatives can form patterns.  
 
------------  
+&nbsp;
+&nbsp;
+&nbsp;
+
 ### 2. Temporal **fractional**-derivative system | [Code](https://github.com/OH-Seoyoung/Pattern_Formation/blob/master/Diffusive_prey-predator_systems/Fractional_derivative.m)  
 - It can form steadily spatial patterns even though its first-derivative counterpart can't exhibit any steady pattern.
 - Approximation of the Caputo's derivative by the Grunwald-Letnikov one in time and Central differences in space
